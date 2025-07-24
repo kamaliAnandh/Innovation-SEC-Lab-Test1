@@ -1,46 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile developer</title>
+    <link rel="stylesheet" href="./style1.css">
 </head>
-<title>Full Width Box with Name and Image</title>
-<style>
-  .full-box {
-    width: 100%;
-    height: 150px;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    box-sizing: border-box;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .name {
-    /* Left side */
-  }
-  .image-container img {
-    height: 120px; /* Adjust image height */
-    border-radius: 8px;
-    object-fit: cover;
-  }
-</style>
-</head>
+
 <body>
-<div class="full-box">
-  <div class="name">kamali</div>
-  <>
-  <div class="image-container">
-    <img src=" alt="Person Image" />
-  </div>
-</div>
+    <div class="home">
+        <div class="text">
+            <h1>Alan Walker</h1>
+            <h2>Web & Mobile App <br>Developer </h2>
+        </div>
+        <div class="photo">
+            <img src="./web-6536652_640.png" alt="">
+        </div>
+    </div>
+    <br>
+    <nav class="navbar">
+        <div class="logo">Alan Walker</div>
+        <ul class="nav-links">
+            <div><a href="#">home</a></div>
+            <div><a href="#">about</a></div>
+            <div><a href="#">portfolio</a></div>
+            <div><a href="#">news</a></div>
+            <div><a href="#">Contact</a></div>
+        </ul>
+    </nav>
+    <section class="about" id="about">
+        <div class="about-left">
+            <img src="./social-media-5187243_640.png" alt="Profile Image" />
+        </div>
+        <div class="about-right">
+            <h2>About <span style="color: red;">Me</span></h2>
+            <p>I’m a passionate Web & Mobile App Developer with experience in building responsive websites and smart
+                applications.</p>
+            <p>I specialize in front-end and back-end development using modern technologies.</p>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+    </section>
+    <section class="selected-works" id="portfolio">
+        <h2 style="color: black;">Selected <span style="color: red;">Works</span></h2>
+        <div class="work-grid">
+            <div class="work-item">
+                <img src="./grocery-shopping-5987164_640.jpg" alt="Food Delivery App">
+                <h3>Food Delivery App</h3>
+
+            </div>
+
+            <div class="work-item">
+                <img src="./portfolio-7070886_640.png" alt="Portfolio Website">
+                <h3>Portfolio Website</h3>
+
+            </div>
+
+            <div class="work-item">
+                <img src="./e-commerce-6898102_640.png" alt="E-Commerce Store">
+                <h3>E-Commerce Store</h3>
+
+            </div>
+        </div>
+        <div class="work-grid">
+
+            <div class="work-item">
+                <img src="./weatherapp.jpeg" alt="Weather App">
+                <h3>Weather App</h3>
+
+            </div>
+
+            <div class="work-item">
+                <img src="./dashboard.jpeg" alt="admin dash-board">
+                <h3>Admin Dash-Board</h3>
+
+            </div>
+
+            <div class="work-item">
+                <img src="./blog.png" alt="Blog app">
+                <h3>Blog App</h3>
+
+            </div>
+        </div>
+    </section>
+    <div class="bar">
+        <h2 style="color: black;">Skill <span style="color: red;">Bar</span></h2>
+    </div>
+    <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 90%;">Web Development</div>
+    </div>
+
+    <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 80%;">Mobile App Development</div>
+    </div>
+
+    <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 70%;">Database Management</div>
+    </div>
+    <div style="width: 100%;display: flex; justify-content: center;margin-top: 30px;">
+        <button class="contact-button">CONTACT ME</button>
+    </div>
+    <section class="latest-news">
+        <h2 style="color: black;">Latest<span style="color: red;"> News</span></h2>
+
+        <div class="news-row">
+            <div class="news-item">
+                <img src="./artificial-intelligence.webp" alt="News 1">
+                <h3>AI Takes Over Mobile Apps</h3>
+                <p>Mobile apps now use AI for smarter features like voice control and personalization. Tools like
+                    Flutter are leading the way in faster, cross-platform development.</p>
+            </div>
+            <div class="news-item">
+                <img src="./web.jpg" alt="News 2">
+                <h3>Web 3.0 & PWAs Are the Future</h3>
+                <p>Web 3.0 and Progressive Web Apps are changing how we build websites—more secure, faster, and work
+                    even offline.</p>
+            </div>
+            <div class="news-item">
+                <img src="./dark.jpeg" alt="News 2">
+                <h3>Dark mode Design in Demand</h3>
+                <p>More websites are adopting dark mode for better user experience. Web developers focus on
+                    accessibility and visual comfort across all devices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="get-in-touch">
+        <h2 style="color: black;"> Get in<span style="color: red;">Touch</span> </h2>
+        <div class="form-container">
+            <div class="form-row">
+                <label for="address">Address:</label>
+                <input type="text" id="address" placeholder="Enter your address">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-row">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-row">
+                <label for="website">Website:</label>
+                <input type="url" id="website" placeholder="Enter your website">
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <footer>
+            <div class="footer-icons">
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="mailto:your@email.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/919000000000" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p style="margin-top: 10px;">&copy; 2025 CodeCraft Web Solutions</p>
+        </footer>
+
+
+    </section>
+
+
+
+
 </body>
 
-    
-
 </html>
-    
